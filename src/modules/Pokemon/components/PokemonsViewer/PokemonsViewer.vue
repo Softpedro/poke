@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { debounce } from 'lodash';
-import { POKEMON_LIST_LIMIT } from '../../configs'
+// import { debounce } from 'lodash';
+// import { POKEMON_LIST_LIMIT } from '../../configs'
 
 </script>
 

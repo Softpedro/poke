@@ -11,7 +11,13 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppContainer: typeof import('./components/AppContainer/AppContainer.vue')['default']
     AppWrap: typeof import('./components/AppWrap/AppWrap.vue')['default']
+    Button: typeof import('./components/Button/Button.vue')['default']
+    FormItem: typeof import('./components/FormItem/FormItem.vue')['default']
+    Input: typeof import('./components/Input/Input.vue')['default']
+    Login: typeof import('./components/Login/Login.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Spinner: typeof import('./components/Spinner/Spinner.vue')['default']
+    SVG: typeof import('./components/SVG/SVG.vue')['default']
   }
 }

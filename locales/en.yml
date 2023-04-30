@@ -1,0 +1,23 @@
+# common
+not-found: Not found
+Email: Email
+Password: Password
+Login: Login
+Home: Home
+Favorites: Favorites
+Abilities: Abilities
+
+# validation
+invalidEmail: Is not a valid email
+invalidMinLength: The min required length is {min}
+invalidMaxLength: The max allowed length is {max}
+
+# components
+$components:
+  Login:
+    invalidCredentialsError: Invalid password or email
+  FavoritePokemonsViewer:
+    notFoundError: You not has favorite pokemons
+  PokemonsViewer:
+    searchByName: Search pokemon by text name
+    noPokemonsError: No pokemons found

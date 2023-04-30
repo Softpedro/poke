@@ -13,6 +13,7 @@ import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Inspect from 'vite-plugin-inspect'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Shiki from 'markdown-it-shiki'
+import VueMacros from 'unplugin-vue-macros/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -34,9 +35,16 @@ export default defineConfig({
   },
   
   plugins: [
-    vue(),
-
     Preview(),
+
+    VueMacros({
+      plugins: {
+        vue: vue({
+          include: [/\.vue$/, /\.md$/],
+          reactivityTransform: true,
+        }),
+      },
+    }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
@@ -51,6 +59,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
+        'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
       ],

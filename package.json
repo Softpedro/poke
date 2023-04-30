@@ -20,11 +20,13 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@intlify/unplugin-vue-i18n": "^0.10.0",
+    "@iconify-json/carbon": "^1.1.16",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
     "@types/lodash": "^4.14.194",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^4.1.0",
+    "@vue-macros/volar": "^0.5.15",
     "https-localhost": "^4.7.1",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-shiki": "^0.8.1",
