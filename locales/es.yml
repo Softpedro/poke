@@ -1,0 +1,12 @@
+$components:
+  Login:
+    invalidCredentialsError: Contraseña o correo electrónico no válido
+Email: Correo electrónico
+Favorites: Favoritos
+Home: Hogar
+Login: Acceso
+Password: Contraseña
+invalidEmail: no es un correo valido
+invalidMaxLength: La longitud máxima permitida es {max}
+invalidMinLength: La longitud mínima requerida es {min}
+not-found: extraviado;
