@@ -67,3 +67,16 @@ export async function httpGet<Result>(
         },
     })
 }
+
+export async function httpPost<Result>(
+    path: string,
+    config: HttpReqConfig = {},
+): Promise<ApiRes<Result>> {
+    return httpRequest(path, {
+        ...config,
+        config: {
+            ...config.config,
+            method: 'POST',
+        },
+    })
+}
